@@ -123,16 +123,19 @@ _Podpowiedź: pakiety salt-master i salt-minion można zainstalować bezpośredn
 
 Otrzymasz adres interfejsu webowego Ranchera w dniu konkursu.
 
-Utwórz trzech użytkowników: Adam, który ma uprawnienia do administracji całego środowiska; Beata, która ma uprawnienia tylko do klastra local; oraz Czarek, który ma uprawnienia tylko do projektu default w klastrze local.
+Utwórz trzech użytkowników: Adam, który ma uprawnienia do administracji całego środowiska; Beata, która ma uprawnienia tylko do klastra local; oraz Czarek, który ma uprawnienia tylko do projektu default w klastrze **local**.
 
-Utwórz w klastrze Neuvector nowy projekt „cyber", a w nim namespace „poligon"; zastosuj dla projektu ograniczenie ilości zasobów do 1 CPU i 1GB RAM (quota).
+Utwórz w klastrze **Neuvector** nowy projekt „cyber", a w nim namespace „poligon"; zastosuj dla projektu ograniczenie ilości zasobów do 1 CPU i 1GB RAM (quota).
+*Podpowiedź: pamiętaj o tym, że na górze interfejsu może być aktywny filtr ograniczający wyświetlanie do wybranego projektu/namespace - wtedy nowy projekt nie będzie widoczny."
+
+Zainstaluj aplikację wordpress w klastrze, w namespace wordpress
+_Podpowiedź: Możesz do tego użyć helm cli albo interfejsu graficznego Ranchera (Apps)_
 
 ### Zadania NeuVector
 
-1. Zainstaluj aplikację wordpress w klastrze, namespace wordpress
-_Podpowiedź: Możesz do tego użyć helm cli albo interfejsu graficznego Ranchera (Apps)_
+1. Uruchom aplikację NeuVector zainstalowaną w klastrze **Neuvector** używając menu po lewej stronie
 
-1. Przeskanuj rejestr kontenerowy z następującymi parametrami:
+2. Przeskanuj rejestr kontenerowy z następującymi parametrami:
  Name: docker-example
 
 Registry: https://registry.hub.docker.com
@@ -145,10 +148,10 @@ Scan Layers: yes
 
 Periodic: no
 
-1. Przeszukaj środowisko pod kątem podatności CVE-2023-1326.
-2. Utwórz zasadę "admission control" blokującą użycie obrazów zawierających więcej niż 10 podatności o severity „High", oraz blokującą deployment w namespace „default".
-3. Przechwyć dowolne pakiety (Pakiet Capture) z poda wordpress.
-4. Utwórz regułę wykrywającą numer karty kredytowej przy pomocy sensora DLP. Przypisz sensor do odpowiedniego poda aplikacji wordpress i przetestuj jej działanie poprzez próbę utworzenia wpisu zawierającego numer: 5575110509607387.
+3. Przeszukaj środowisko pod kątem podatności CVE-2023-1326.
+4. Utwórz zasadę "admission control" blokującą użycie obrazów zawierających więcej niż 10 podatności o severity „High", oraz blokującą deployment w namespace „default".
+5. Przechwyć dowolne pakiety (Pakiet Capture) z poda wordpress.
+6. Utwórz regułę wykrywającą numer karty kredytowej przy pomocy sensora DLP. Przypisz sensor do odpowiedniego poda aplikacji wordpress i przetestuj jej działanie poprzez próbę utworzenia wpisu zawierającego numer: 5575110509607387.
 5. Utwórz zasadę sieciową "Network Rule" blokującą komunikację z poda wordpress do zewnętrznego internetu.
 6. Włącz tryb Monitor dla poda (podów) bazy danych wordpressa oraz tryb Protect dla głównego poda wordpressa.
 7. Utwórz zasadę blokującą proces ls w obrębie poda wordpress.
