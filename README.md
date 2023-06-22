@@ -20,7 +20,7 @@ Wszystkie zadania są punktowane. Zwycięży zespół z największą liczbą pun
 Każdy zespół będzie miał przypisane środowisko składające się z dwóch maszyn wirtualnych: _server1_ oraz _server2_. Na miejscu dostaniecie indywidualny adres do połączenia ssh z maszynami. Dla wszystkich maszyn będą identyczne dane logowania:
 
 Użytkownik: suse
- Hasło: zielonykameleon
+ Hasło: zielonykameleon23
 
 ### Przygotowanie
 
