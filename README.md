@@ -2,8 +2,6 @@ CYBERpoligon ISAC-GIG Politechnika Śląska, 22 czerwca 2023
 
 # CYBERpoligon - zadania dla uczestników
  
- 
- 
 
 
 ## Informacje ogólne
@@ -55,6 +53,7 @@ W rozwiązaniu zadań z bezpieczeństwa Kubernetes pomocne będą:
 Skonfiguruj server1 tak, aby był on bramą domyślną dla server2. Wynikiem zadania ma być możliwość uzyskania zasobów dostępnych w Internecie przez server2. Postaraj się, aby nie ucierpiał na tym poziom zabezpieczeń na server1 (blokowanie portów przez zaporę), a także aby konfiguracja była permanentna - pozostawała taka sama po restarcie obu serwerów.
 
 _Podpowiedź: w systemach SUSE można skonfigurować wiele ustawień sieciowych za pomocą YaST._
+_Podpowiedź: platforma wirtualizacyjna nie dopuszcza ustawiania statycznego IP - pozostaw DHCP, IP pozostanie to samo nawet po restarcie._
 
 ### Zadanie 2
 
