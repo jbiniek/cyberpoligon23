@@ -126,12 +126,6 @@ Otrzymasz adres interfejsu webowego Ranchera w dniu konkursu.
 
 Utwórz trzech użytkowników: Adam, który ma uprawnienia do administracji całego środowiska; Beata, która ma uprawnienia tylko do klastra local; oraz Czarek, który ma uprawnienia tylko do projektu default w klastrze local.
 
-Utwórz klaster produkcyjny używając AWS, z następującymi warunkami:
-
-• przypisanie zasad bezpieczeństwa (Pod Security Policy, lub Pod Security Admission) z dowolnego template
-
-• przypisanie klastra do nowego właściciela (Owner), użytkownik: Czarek
-
 Utwórz w klastrze Neuvector nowy projekt „cyber", a w nim namespace „poligon"; zastosuj dla projektu ograniczenie ilości zasobów do 1 CPU i 1GB RAM (quota).
 
 ### Zadania NeuVector
